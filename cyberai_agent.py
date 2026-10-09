@@ -228,7 +228,7 @@ def make_digest(items):
     md += ["## Käytetyt lähteet tänään", ""]
     md += [f"- {s}" for s in used]
     md += ["", "## Puheskripti", "", script]
-    return script, "\n".join(md), feed_stats, used, broken
+    return script, "\n".join(md), used
 
 
 def update_sources_stats(feed_stats: dict, broken: list, used: list) -> None:
@@ -334,7 +334,7 @@ def main() -> None:
         return
     print(f"[info] {len(items)} uutista noudettu.")
 
-    script, markdown, feed_stats, used, broken = make_digest(items)
+    script, markdown, used = make_digest(items)
     md_path.write_text(markdown)
     print(f"[ok] Tekstidigesti: {md_path}")
 
