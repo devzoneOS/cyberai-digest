@@ -38,6 +38,9 @@ TTS_ENGINE = os.environ.get("DIGEST_TTS", "edge")  # "edge" tai "kokoro"
 
 FEEDS = {
     # --- Kyberturvallisuus ---
+    "Kyberturvallisuuskeskus päivittäiset uutiset": "https://www.kyberturvallisuuskeskus.fi/files/rss/news.xml",
+    "Kyberturvallisuuskeskus päivittäiset haavoittuvuuskooste": "https://www.kyberturvallisuuskeskus.fi/files/rss/vulns.xml",
+    "Kyberturvallisuuskeskus varoitukset": "https://www.kyberturvallisuuskeskus.fi/feed/rss/fi/401",
     "The Hacker News": "https://feeds.feedburner.com/TheHackersNews",
     "BleepingComputer": "https://www.bleepingcomputer.com/feed/",
     "Krebs on Security": "https://krebsonsecurity.com/feed/",
@@ -51,7 +54,6 @@ FEEDS = {
     "VentureBeat AI": "https://venturebeat.com/category/ai/feed/",
     # --- Suomi (poista tai lisää omia) ---
     "Tietoturva.fi": "https://www.tietoturva.fi/feed",
-    "Kyberturvallisuuskeskus": "https://www.kyberturvallisuuskeskus.fi/feed",
 }
 
 # ------------------------------------------------------- aiheiden luokittelu
