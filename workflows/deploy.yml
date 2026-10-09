@@ -19,7 +19,7 @@ jobs:
       - run: pip install feedparser edge-tts requests
       - run: python cyberai_agent.py
         env:
-          MISTRAL_API_KEY: ${{ secrets.My_CyberSecurity_and_AI_News }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           DIGEST_BASE_URL: https://devzoneOS.github.io/cyberai-digest
           DIGEST_HOME: ${{ github.workspace }}
       - name: Commit & julkaise
