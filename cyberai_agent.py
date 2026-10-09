@@ -230,6 +230,18 @@ def make_digest(items):
     md += ["", "## Puheskripti", "", script]
     return script, "\n".join(md), used
 
+def clean_for_tts(text: str) -> str:
+    """Poistaa merkinnät, joita TTS ei saa lukea ääneen."""
+    import re
+    text = re.sub(r"\*\*+", "", text)      # ** ja *** pois
+    text = text.replace("*", "")           # yksittäiset asteriskit
+    text = re.sub(r"^#+\s*", "", text)     # otsikkomerkit
+    text = re.sub(r"`{1,3}", "", text)     # koodimerkit
+    text = re.sub(r"\[(.*?)\]\((.*?)\)", r"\1", text)  # teksti -> teksti
+    text = re.sub(r"https?://\S+", "linkki", text)     # paljaat URL:t sanaksi "linkki"
+    text = re.sub(r"[_#|>]+", " ", text)   # loput merkinnät
+    return re.sub(r"\s{2,}", " ", text).strip()
+
 
 def update_sources_stats(feed_stats: dict, broken: list, used: list) -> None:
     """Ylläpitää sources.md-tilastoa: mitkä lähteet aktiivisia, mitkä rikki."""
@@ -272,7 +284,7 @@ def text_to_mp3(script: str, out_path: pathlib.Path) -> None:
         import asyncio
 
         async def run():
-            await edge_tts.Communicate(script, VOICE).save(str(out_path))
+            await edge_tts.Communicate(clean_for_tts(script), VOICE).save(str(out_path))
 
         asyncio.run(run())
 
