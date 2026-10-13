@@ -36,23 +36,23 @@ MAX_ITEMS_TOTAL = 14
 LLM_MODEL = os.environ.get("DIGEST_MODEL", "mistral-small-latest")
 TTS_ENGINE = os.environ.get("DIGEST_TTS", "edge")  # "edge" tai "kokoro"
 
-FEEDS = {
-    # --- Kyberturvallisuus ---
-    "Kyberturvallisuuskeskus päivittäiset uutiset": "Kyberturvallisuuskeskus: https://www.kyberturvallisuuskeskus.fi/feed/rss/fi",
-    "The Hacker News": "https://feeds.feedburner.com/TheHackersNews",
-    "BleepingComputer": "https://www.bleepingcomputer.com/feed/",
-    "Krebs on Security": "https://krebsonsecurity.com/feed/",
-    "Dark Reading": "https://www.darkreading.com/rss.xml",
-    "SANS ISC": "https://isc.sans.edu/rssfeed.xml",
-    "Schneier on Security": "https://www.schneier.com/feed/atom/",
-    # --- Tekoäly ---
-    "Hugging Face Blog": "https://huggingface.co/blog/feed.xml",
-    "Google DeepMind Blog": "https://deepmind.google/blog/rss.xml",
-    "TechCrunch AI": "https://techcrunch.com/category/artificial-intelligence/feed/",
-    "VentureBeat AI": "https://venturebeat.com/category/ai/feed/",
-    # --- Suomi (poista tai lisää omia) ---
-    "Tietoturva.fi": "https://www.tietoturva.fi/feed",
-}
+FEEDS_FILE = BASE_DIR / "feeds.txt"
+
+def load_feeds() -> dict:
+    """Lukee lähteet feeds.txt:sta: yksi 'Nimi: URL' per rivi."""
+    feeds = {}
+    if FEEDS_FILE.exists():
+        for line in FEEDS_FILE.read_text().splitlines():
+            line = line.strip()
+            if not line or line.startswith("#") or ":" not in line:
+                continue
+            name, url = line.split(":", 1)
+            name, url = name.strip(), url.strip()
+            if url.startswith("http"):
+                feeds[name] = url
+    return feeds
+
+FEEDS = load_feeds()
 
 # ------------------------------------------------------- aiheiden luokittelu
 # Avainsanat pienillä kirjaimilla; osuman mukaan -> (pääaihe, alaluokka).
