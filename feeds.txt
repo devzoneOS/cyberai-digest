@@ -12,6 +12,15 @@ Hugging Face Blog: https://huggingface.co/blog/feed.xml
 Google DeepMind Blog: https://deepmind.google/blog/rss.xml
 TechCrunch AI: https://techcrunch.com/category/artificial-intelligence/feed/
 VentureBeat AI: https://venturebeat.com/category/ai/feed/
+Open AI uutiset: https://openai.com/news/rss.xml
+Open AI Blogi: https://openai.com/blog/rss.xml
+Open AI uutuudet: https://openai.com/products/release-notes/rss.xml
+Microsoft AI: https://microsoft.ai/blog/
+Microsoft Azure: https://azure.microsoft.com/en-us/blog/feed/
+Mistral AI: https://mistral.ai/news/rss
+Mistral Uutiset: https://mistral.ai/news/
 
 # Suomi
-Tietoturva.fi: https://www.tietoturva.fi/feed
+Tivi: https://www.tivi.fi/api/feed/v2/rss/tv
+Uusiteknologia: https://www.uusiteknologia.fi/feed/
+Iltalehti Bitti: https://www.iltalehti.fi/rss/bitti.xml
