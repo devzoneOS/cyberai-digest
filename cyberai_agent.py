@@ -112,7 +112,7 @@ def classify(item: dict) -> str:
 
 
 PROMPT = """Olet tiivistemestari. Tee alla olevista uutisista suomenkielinen
-kuunnelmatiivistelmä podcast-muodossa (n. 250 sanaa).
+kuunnelmatiivistelmä podcast-muodossa.
 
 Uutiset on jo luokiteltu aiheittain. Noudata TÄSMÄLLEEN tätä järjestystä ja
 mainitse siirtymissä osion nimi (esim. "Haavoittuvuuksissa tapahtuu...").
@@ -126,14 +126,21 @@ Osiojärjestys:
 5. Tekoälyuutiset Suomesta
 6. Tekoälyn uutiset ja uutuudet
 
+PITUUS uutisten määrän mukaan:
+- alle 6 uutista: lyhyt katsaus, n. 150 sanaa
+- 6-12 uutista: n. 250 sanaa
+- yli 12 uutista: perusteellinen katsaus, n. 400 sanaa
+
 Säännöt:
-- Aloita tervehdyksellä "Hyvää huomenta, Olli" ja KÄYTÄ uutisten alussa annettua päivämäärää täsmälleen. Älä keksi omaa päivämäärää.
+- Aloita tervehdyksellä "Hyvää huomenta, Olli" ja KÄYTÄ uutisten alussa annettua
+  päivämäärää täsmälleen. Älä keksi omaa päivämäärää.
 - Puhetyyli, asiantunteva mutta rento. Ei luettelomerkkejä, ei otsikoita.
+- Kirjoita desimaaliluvut (esim. CVSS-pisteet) pilkulla: "9,8" eikä "9.8".
+- Kirjoita päivämäärät mieluiten kirjaimin: "kolmastoista lokakuuta".
+- Mainitse versiot luontevasti, vältä pitkiä numeroketjuja.
+- Kun uutisia on paljon, syvenny tärkeimpiin äläkä luettele kaikkia tasapaksusti.
 - Älä sekoita aiheita keskenään — sama aihe pysyy samassa osiossa.
 - Lopeta yhdellä käytännön vinkillä tai huomiolla päivältä.
-- Kirjoita desimaaliluvut (esim. CVSS-pisteet) pilkulla: "9,8" eikä "9.8".
-- Kirjoita päivämäärät kirjaimin: "kolmastoista lokakuuta" eikä "13.10.".
-- Mainitse versiot luontevasti: "versio neljätoista" tai "Windows-versio 11" — vältä pitkiä numeroketjuja.
 
 Uutiset:
 {news}
