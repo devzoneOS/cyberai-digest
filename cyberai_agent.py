@@ -283,10 +283,18 @@ def text_to_mp3(script: str, out_path: pathlib.Path) -> None:
     else:
         import asyncio
 
-        async def run():
+        async def edge_save():
             await edge_tts.Communicate(clean_for_tts(script), VOICE).save(str(out_path))
 
-        asyncio.run(run())
+        for attempt in range(1, 4):  # 3 yritystä
+            try:
+                asyncio.run(edge_save())
+                return
+            except Exception as exc:
+                print(f"[warn] edge-tts yritys {attempt}/3 epäonnistui: {exc}")
+        print("[warn] edge-tts ei vastaa — siirrytään varajärjestelmään (gTTS).")
+        from gtts import gTTS
+        gTTS(clean_for_tts(script), lang="fi").save(str(out_path))
 
 
 def write_podcast_rss(entries: list) -> None:
