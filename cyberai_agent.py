@@ -127,7 +127,7 @@ Osiojärjestys:
 6. Tekoälyn uutiset ja uutuudet
 
 Säännöt:
-- Aloita tervehdyksellä "Hyvää huomenta, Olli" ja kerro päivämäärä.
+- Aloita tervehdyksellä "Hyvää huomenta, Olli" ja KÄYTÄ uutisten alussa annettua päivämäärää täsmälleen. Älä keksi omaa päivämäärää.
 - Puhetyyli, asiantunteva mutta rento. Ei luettelomerkkejä, ei otsikoita.
 - Älä sekoita aiheita keskenään — sama aihe pysyy samassa osiossa.
 - Lopeta yhdellä käytännön vinkillä tai huomiolla päivältä.
