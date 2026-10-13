@@ -1,0 +1,17 @@
+# Kyberturvallisuus
+Kyberturvallisuuskeskus: https://www.kyberturvallisuuskeskus.fi/feed/rss/fi
+The Hacker News: https://feeds.feedburner.com/TheHackersNews
+BleepingComputer: https://www.bleepingcomputer.com/feed/
+Krebs on Security: https://krebsonsecurity.com/feed/
+Dark Reading: https://www.darkreading.com/rss.xml
+SANS ISC: https://isc.sans.edu/rssfeed.xml
+Schneier on Security: https://www.schneier.com/feed/atom/
+
+# Tekoäly
+Hugging Face Blog: https://huggingface.co/blog/feed.xml
+Google DeepMind Blog: https://deepmind.google/blog/rss.xml
+TechCrunch AI: https://techcrunch.com/category/artificial-intelligence/feed/
+VentureBeat AI: https://venturebeat.com/category/ai/feed/
+
+# Suomi
+Tietoturva.fi: https://www.tietoturva.fi/feed
