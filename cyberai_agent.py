@@ -199,13 +199,25 @@ def make_digest(items):
     for cat in SECTION_ORDER:
         for it in buckets.get(cat, []):
             news_parts.append(f"[{CATEGORY_META[cat][0]}] {it['title']}: {it['summary']}")
+
+    # ← UUSI: kertoa mallille tänään päivä (ei arvaamista)
+    today = datetime.date.today()
+    paivys = f"{today.day}.{today.month}.{today.year}"
+    viikonpaiva = ["maanantai", "tiistai", "keskiviikko", "torstai",
+                   "perjantai", "lauantai", "sunnuntai"][today.weekday()]
+    news_text = (
+        f"TÄNÄÄN ON {viikonpaiva} {paivys}. "
+        "Käytä tätä päivämäärää tervehdyksessä täsmälleen oikein. Älä keksi omaa.\n\n"
+        + "\n".join(news_parts)
+    )
+
     api_key = os.environ["MISTRAL_API_KEY"]
     resp = requests.post(
         "https://api.mistral.ai/v1/chat/completions",
         headers={"Authorization": f"Bearer {api_key}"},
         json={
             "model": LLM_MODEL,
-            "messages": [{"role": "user", "content": PROMPT.format(news="\n".join(news_parts))}],
+            "messages": [{"role": "user", "content": PROMPT.format(news=news_text)}],  # ← muutos
             "temperature": 0.4,
         },
         timeout=120,
