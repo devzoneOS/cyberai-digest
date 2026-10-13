@@ -19,6 +19,7 @@ Microsoft AI: https://microsoft.ai/blog/
 Microsoft Azure: https://azure.microsoft.com/en-us/blog/feed/
 Mistral AI: https://mistral.ai/news/rss
 Mistral Uutiset: https://mistral.ai/news/
+MIT Technology Review AI: https://www.technologyreview.com/topic/artificial-intelligence/feed/
 
 # Suomi
 Tivi: https://www.tivi.fi/api/feed/v2/rss/tv
