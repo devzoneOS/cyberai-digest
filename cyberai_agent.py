@@ -360,6 +360,17 @@ def recent_episodes() -> list:
         })
     return entries
 
+def prune_old_audio(days: int = 30) -> None:
+    """Poistaa MP3:t jotka vanhempia kuin `days` — podcast-RSS paivittyy automaattisesti."""
+    raj = datetime.date.today() - datetime.timedelta(days=days)
+    for mp3 in AUDIO_DIR.glob("*.mp3"):
+        try:
+            if datetime.date.fromisoformat(mp3.stem) < raj:
+                mp3.unlink()
+                print(f"[info] Poistettu vanha jakso: {mp3.name}")
+        except ValueError:
+            pass
+
 
 # ----------------------------------------------------------------- pääajo
 def main() -> None:
@@ -390,6 +401,7 @@ def main() -> None:
 
     save_seen(seen)
     update_sources_stats(feed_stats, broken, used)
+    prune_old_audio(30)
     write_podcast_rss(recent_episodes())
     print(f"[ok] Podcast-RSS: {RSS_FILE}")
 
