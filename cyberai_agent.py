@@ -262,10 +262,11 @@ def clean_for_tts(text: str) -> str:
     text = re.sub(r"\[(.*?)\]\((.*?)\)", r"\1", text)  # teksti -> teksti
     text = re.sub(r"https?://\S+", "linkki", text)     # paljaat URL:t sanaksi "linkki"
     text = re.sub(r"[_#|>]+", " ", text)   # loput merkinnät
-     # Desimaaliluvut: 9.8 -> "9 pilkku 8" (ei tulkita päivämääräksi)
-    text = re.sub(r"(\d{1,2})\.(\d)(?!\d)", r"\1 pilkku \2", text)
-    # Versioketjut: 14.0.3650 -> "14 piste 0 piste 3650"
+    # Versioketjut ENSIN (vaativampi sääntö): 14.0.3650 -> "14 piste 0 piste 3650"
     text = re.sub(r"\b(\d+(?:\.\d+){2,})\b",
+                  lambda m: m.group(1).replace(".", " piste "), text)
+    # Sitten desimaalit: 9.8 -> "9 pilkku 8" (ei tulkita päivämääräksi)
+    text = re.sub(r"(\d{1,2})\.(\d)(?!\d)", r"\1 pilkku \2", text)
                   lambda m: m.group(1).replace(".", " piste "), text)
     return re.sub(r"\s{2,}", " ", text).strip()
 
