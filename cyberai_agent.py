@@ -253,21 +253,18 @@ def make_digest(items):
     return script, "\n".join(md), used
 
 def clean_for_tts(text: str) -> str:
-    """Poistaa merkinnät, joita TTS ei saa lukea ääneen."""
+    """Poistaa merkinnät, joita TTS ei saa lukea ääneksi."""
     import re
-    text = re.sub(r"\*\*+", "", text)      # ** ja *** pois
-    text = text.replace("*", "")           # yksittäiset asteriskit
-    text = re.sub(r"^#+\s*", "", text)     # otsikkomerkit
-    text = re.sub(r"`{1,3}", "", text)     # koodimerkit
-    text = re.sub(r"\[(.*?)\]\((.*?)\)", r"\1", text)  # teksti -> teksti
-    text = re.sub(r"https?://\S+", "linkki", text)     # paljaat URL:t sanaksi "linkki"
-    text = re.sub(r"[_#|>]+", " ", text)   # loput merkinnät
-    # Versioketjut ENSIN (vaativampi sääntö): 14.0.3650 -> "14 piste 0 piste 3650"
+    text = re.sub(r"\*\*+", "", text)
+    text = text.replace("*", "")
+    text = re.sub(r"^#+\s*", "", text)
+    text = re.sub(r"`{1,3}", "", text)
+    text = re.sub(r"\[(.*?)\]\((.*?)\)", r"\1", text)
+    text = re.sub(r"https?://\S+", "linkki", text)
+    text = re.sub(r"[_#|>]+", " ", text)
     text = re.sub(r"\b(\d+(?:\.\d+){2,})\b",
                   lambda m: m.group(1).replace(".", " piste "), text)
-    # Sitten desimaalit: 9.8 -> "9 pilkku 8" (ei tulkita päivämääräksi)
     text = re.sub(r"(\d{1,2})\.(\d)(?!\d)", r"\1 pilkku \2", text)
-                  lambda m: m.group(1).replace(".", " piste "), text)
     return re.sub(r"\s{2,}", " ", text).strip()
 
 
