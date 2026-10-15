@@ -1,30 +1,30 @@
-# Lähdetilastot (päivitetty 2026-10-14)
+# Lähdetilastot (päivitetty 2026-10-15)
 
 | Lähde | päiviä | uutisia | rikki | viimeksi tuotti |
 |---|---|---|---|---|
-| The Hacker News | 8 | 24 | 0 | 2026-10-14 |
-| BleepingComputer | 8 | 24 | 0 | 2026-10-14 |
-| Dark Reading | 8 | 24 | 0 | 2026-10-14 |
-| Hugging Face Blog | 8 | 24 | 0 | 2026-10-13 |
-| Google DeepMind Blog | 8 | 24 | 0 | - |
-| TechCrunch AI | 8 | 24 | 0 | - |
-| Krebs on Security | 8 | 20 | 0 | 2026-10-14 |
-| SANS ISC | 8 | 20 | 0 | 2026-10-09 |
-| Schneier on Security | 8 | 19 | 0 | - |
-| Kyberturvallisuuskeskus | 6 | 12 | 2 | 2026-10-14 |
-| Open AI uutiset | 3 | 9 | 0 | - |
-| Open AI Blogi | 3 | 9 | 0 | - |
-| Microsoft Azure | 3 | 9 | 0 | - |
-| Mistral AI | 3 | 9 | 0 | - |
-| Tivi | 3 | 9 | 0 | - |
-| Uusiteknologia | 3 | 9 | 0 | - |
-| Iltalehti Bitti | 3 | 9 | 0 | - |
+| The Hacker News | 9 | 27 | 0 | 2026-10-15 |
+| BleepingComputer | 9 | 27 | 0 | 2026-10-15 |
+| Dark Reading | 9 | 27 | 0 | 2026-10-15 |
+| Hugging Face Blog | 9 | 27 | 0 | 2026-10-13 |
+| Google DeepMind Blog | 9 | 27 | 0 | - |
+| TechCrunch AI | 9 | 27 | 0 | - |
+| Krebs on Security | 9 | 23 | 0 | 2026-10-15 |
+| SANS ISC | 9 | 23 | 0 | 2026-10-09 |
+| Schneier on Security | 9 | 22 | 0 | - |
+| Kyberturvallisuuskeskus | 7 | 15 | 2 | 2026-10-15 |
+| Open AI uutiset | 4 | 12 | 0 | - |
+| Open AI Blogi | 4 | 12 | 0 | - |
+| Microsoft Azure | 4 | 12 | 0 | - |
+| Mistral AI | 4 | 12 | 0 | - |
+| Tivi | 4 | 12 | 0 | - |
+| Uusiteknologia | 4 | 12 | 0 | - |
+| Iltalehti Bitti | 4 | 12 | 0 | - |
+| MIT Technology Review AI | 3 | 9 | 0 | - |
 | Kyberturvallisuuskeskus päivittäiset uutiset | 2 | 6 | 0 | 2026-10-11 |
 | Kyberturvallisuuskeskus varoitukset | 2 | 6 | 0 | 2026-10-11 |
-| MIT Technology Review AI | 2 | 6 | 0 | - |
 | Kyberturvallisuuskeskus päivittäiset haavoittuvuuskooste | 2 | 4 | 0 | 2026-10-11 |
-| VentureBeat AI | 8 | 0 | 8 | - |
+| VentureBeat AI | 9 | 0 | 9 | - |
 | Tietoturva.fi | 5 | 0 | 5 | - |
-| Open AI uutuudet | 3 | 0 | 3 | - |
-| Microsoft AI | 3 | 0 | 3 | - |
-| Mistral Uutiset | 3 | 0 | 3 | - |
+| Open AI uutuudet | 4 | 0 | 4 | - |
+| Microsoft AI | 4 | 0 | 4 | - |
+| Mistral Uutiset | 4 | 0 | 4 | - |
