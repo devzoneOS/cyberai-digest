@@ -25,3 +25,9 @@ MIT Technology Review AI: https://www.technologyreview.com/topic/artificial-inte
 Tivi: https://www.tivi.fi/api/feed/v2/rss/tv
 Uusiteknologia: https://www.uusiteknologia.fi/feed/
 Iltalehti Bitti: https://www.iltalehti.fi/rss/bitti.xml
+Tietoturva.fi: https://www.tietoturva.fi/feed
+
+# Tutkimus
+arXiv cs.CR (tietoturva): http://export.arxiv.org/rss/cs.CR
+arXiv cs.AI (tekoäly): http://export.arxiv.org/rss/cs.AI
+IACR ePrint (kryptotutkimus): https://eprint.iacr.org/rss
