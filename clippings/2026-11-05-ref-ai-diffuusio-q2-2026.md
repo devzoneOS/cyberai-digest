@@ -1,14 +1,14 @@
 ---
 pvm: 2026-11-05
 kategoria: reference
-tunnisteet: [ai-adoptio, tilastot, suomi, kv Vertailu, data]
+tunnisteet: [ai-adoptio, tilastot, suomi, kv-vertailu, data]
 lahde: AI Diffusion -aineisto Q2/2026 (CSV)
 liite: https://drive.google.com/file/d/1s3kFEIZoJKj2-zNpp3H2UK7fziJbCLdk/view?usp=drivesdk
 ---
 
-**Tekoäydiffuusio maittain, Q2/2026**
+**Tekoälydiffuusio maittain, Q2/2026**
 
-Ainelähteä on tallennettu arkistoon datatiedostona:
+Ainelähde on tallennettu arkistoon datatiedostona:
 data/ai_diffusion_q2_2026.csv (sarake: H1/2025, H2/2025, Q1/2026, Q2/2026).
 
 Kärki Q2/2026: UAE 73,3 %, Singapore 64,3 %, Norja 49,4 %. Suomi 30,6 %
