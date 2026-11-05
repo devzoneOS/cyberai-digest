@@ -1,7 +1,7 @@
 # Kyberturvallisuus
 Kyberturvallisuuskeskus Tietoturva NYT: https://www.kyberturvallisuuskeskus.fi/feed/rss/fi/399
 Kyberturvallisuuskeskus Varoitukset: https://www.kyberturvallisuuskeskus.fi/feed/rss/fi/401
-Kyberturvallisuuskeskus Pöivittäinen Uutiskooste: https://www.kyberturvallisuuskeskus.fi/files/rss/news.xml
+Kyberturvallisuuskeskus Päivittäinen Uutiskooste: https://www.kyberturvallisuuskeskus.fi/files/rss/news.xml
 Kyberturvallisuuskeskus Haavoittuvuudet: https://www.kyberturvallisuuskeskus.fi/feed/rss/fi/400
 The Hacker News: https://feeds.feedburner.com/TheHackersNews
 BleepingComputer: https://www.bleepingcomputer.com/feed/
