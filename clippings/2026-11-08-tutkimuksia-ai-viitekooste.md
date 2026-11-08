@@ -2,7 +2,7 @@
 pvm: 2026-11-08
 kategoria: research
 tunnisteet: [tekoalytutkimus, tuottavuus, tyollisyys, taloustiede, viitekooste, tekoalyinvestoinnit]
-lahde: Kayttajan kokoama tutkimuskooste (10 julkaisua/aineistoa 2023-2026)
+lahde: Kayttajan (Olli Sivonen) kokoama tutkimuskooste (10 julkaisua/aineistoa 2023-2026)
 liite: https://drive.google.com/file/d/1ocqx12NX5o6kp_ZTKSdk573IsSq9ehX-DBF3Go3C3r8/view
 ---
 
@@ -40,7 +40,7 @@ ja suurista kyselyaineistoista:
   Brookings 2026): tekoälyn omaksumisen raja Euroopan ja USA:n välillä.
 
 Merkitys SecPromiselle: valmis viiteaineisto liiketoimintasuunnitelman
-hyotylaskuriin, markkinointivaitteiden perusteluun ja asiakasnakokulman
-(Cokmost?) hyotyhavaintojen tueksi; alaikaista tulosta Dell'Aquan
-"epatasainen raja" tukee palveluideoita, joissa tekoalyhyodynnan
-rajaus on osa asiantuntijatyota.
+hyötylaskuria, markkinointiväitteiden perustelua ja asiakasnäkökulman
+hyötylaskentaa varten; Dell'Aquan "epätasaisen rajan" tulos tukee
+palveluideoita, joissa tekoälyn hyödyntämisen rajaaminen on osa
+asiantuntijatyötä.
