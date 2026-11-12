@@ -1,20 +1,15 @@
-# TLDR 12.11.2026 — Nvidian CEO-haku, AWS Emulator, Gemini Decisions
+---
+pvm: 2026-11-12
+kategoria: ai_news
+tunnisteet: [nvidia, aws, openai, fysiikka, gemini]
+lahde: TLDR
+gmail-aihe: "Nvidia's CEO search 🔍, AWS emulator 👨‍💻, Gemini Decisions API 💡"
+---
 
-- **Päivämäärä:** 2026-11-12
-- **Kategoria:** ai_news
-- **Tunnisteet:** nvidia, johto, aws, koodausagentit, gemini, teollisuus, agentit, openai
-- **Gmail-aihe:** Nvidia's CEO search 🔍, AWS emulator 👨‍💻, Gemini Decisions API 💡
+1. **Nvidia etsii uutta toimitusjohtajaa:** Yrityksen hallitus selvittää ehdokkaita Jensen Huangin korvaajaksi tämän useiden avioliiton ulkopuolisten suhteiden raportoinnin jälkeen ja harkitsee väliaikaista johtajaa. Huangin jatko veisi yrityksen lainsäätäjien, sijoittajien ja asiakkaiden tarkkailuun, ja mahdollinen lähtö vaikuttaisi laajalti alan yli.
 
-## Keskeiset uutiset
+2. **AWS Emulator antaa agenttien paikallisen AWS-kopion:** Avoin työkalu tarjoaa koodausagentteille paikallisen AWS-ympäristön testausta varten, jolloin agentit voivat rakentaa ja tarkistaa suuren osan ohjelmistoista ja insinöörien työksi jää päättää mitä rakennetaan ja milloin tulos on valmis.
 
-1. **Nvidia etsii ulkopuolisen konsultin avulla uutta toimitusjohtajaa.** Jensen Huangin sivusuhteista nousseen kohun jälkeen hallitus harkitsee väliaikaista johtajaa pysyvän löytymiseen asti; Huangin pysyminen veisi yhtiön lainsäätäjien, sijoittajien ja asiakkaiden tarkastelun kohteeksi.
+3. **OpenAI:n "paimenet" vahvistavat fysiikan läpimurron:** Nimitutkimusvaliokunta vahvisti OpenAI:n todistuksen kvanttisen Yang-Mills-teorian olemassaolosta — Standardimallin kulmakivi. Lähestymistapa herättää närää matematiikassa, eivät asiantuntijat edes väitä ymmärtävänsä todistusta vielä kokonaan.
 
-2. **AWS Emulator muuttaa ohjelmistokehittäjän roolia agenttiajan.** Julkinen työkalu antaa koodausagenteille paikallisen AWS-ympäristön, jossa agentit voivat rakentaa ja testata lähes kaiken — insinöörin työksi jäävät päätökset siitä, mitä rakennetaan ja milloin tulos on oikein.
-
-3. **OpenAI:n asiantuntijat vahvistivat kvantti-Yang-Mills-teorian olemassaolon todistuksen.** Todistus on Standardimallin kulmakivi, mutta liian pitkä ja monimutkainen ihmisen heti ymmärrettäväksi. OpenAI:n lokakuussa julkaisema 700+ todistuksen tulva sai moitteita, joten julkaisua valvoo nyt erityinen komitea — osa matemaatikoista pitää sitä turhana portinvartioinnin.
-
-4. **Gemini Decisions API tekee nopeita kalibroituja monimodaalisia päätöksiä.** Yksi läpikäynti arvioi tuhat kysymystä tekstillä, kuvilla, äänellä, videolla ja PDF:illä; hinta 0,10 $ / 2 miljoonaa tokenia ja tulosteet ilmaisia.
-
-5. **Subagenttien delegointi epäonnistuu eri tavoin riippuen mallista.** Artikkeli vertaa delegointitapoja ja suosittelee haarautumista (fork) yhteenvetojen sijaan: forkki pitää tarvittavat keskustelun osat ja pudottaa loput, mikä pitää kustannukset kurissa kasvavassa kontekstissa.
-
-6. **Ylijärjestelmien aikakausi edellyttää parempia vallihautoja.** Analyyseissä todetaan, että AI samanaikaisesti nopeuttaa jäljittelyä ja edun kertymistä — teknologian levityksestä hyötyvät silti vain yritykset, joilla on kestävä kilpailuetu tai matala sisääntulohinta.
+4. **Gemini Decisions API nopeisiin arviointeihin:** API käy läpi jopa 1 000 kyllä/ei-, valinta- ja rubriikkikysymystä yhdellä läpikäynnillä teksti-, kuva-, ääni-, video- ja PDF-syötteillä. Hinta on $0,10 per 2 miljoonaa tokenia, lähdöt ilmaiseksi.
