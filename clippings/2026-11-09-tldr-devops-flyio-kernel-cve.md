@@ -1,14 +1,17 @@
-# 2026-11-09 — TLDR DevOps
+---
+pvm: 2026-11-09
+kategoria: vulnerabilities
+tunnisteet: [flyio, linux-kernel, cve, docker, octopus, opentofu, cloudflare]
+lahde: TLDR DevOps
+gmail-aihe: "Octopus Feature Flags 🐙, Harmess for Agents 🪄, Grafana Variables 📈"
+---
 
-- **Kategoria:** vulnerabilities
-- **Tunnisteet:** kernel-cve, fleet-recovery, dns, supply-chain, iac
-- **Lähde:** TLDR DevOps (dan@tldrnewsletter.com), 2026-11-09
-- **Gmail-aihe:** "Octopus Feature Flags 🐙, Harmess for Agents 🪄, Grafana Variables 📈"
+1. **Fly.io korjasi koko laivaston kernel-bugin takia:** CVE-2026-99999 salli vieras-VM:ien lukea isäntämuistia — hyökkääjä saattoi kontrolloida kahta IPv4-otsakkeen tavua, mikä johti palomuurien ohituksiin ja oob-lukuihin. Fly.io paikkasi ja boottasi koko laivaston 10 tunnissa ja kehottaa salaamatonta liikennettä 15.–17.10. lähettäneitä kiertämään tunnuksensa.
 
-## Keskeiset uutiset
+2. **Alpinen OpenSSH-salasanakierros:** openssh-server-paketin aukko salli kirjautumisen ilman salasanaa, jos tilillä ei ole salasanaa. Vaikuttaa julkaisuihin 3.16–3.24; openssh pitää päivittää ja sshd käynnistää uudelleen tai salasanakirjautumiset poistaa heti.
 
-1. **Fly.io patchasi ja bootti koko kalustonsa 10 tunnissa CVE-2026-99999:n (Linux-kernel) takia.** Vieraat VM:t pystyivät lukemaan isäntämuistia kaksi tavun IPv4-otsikon manipuloinnilla, mikä mahdollisti palomuurin ohitukset ja rajoja ylittävät luvut; salaamatonta liikennettä 15.–17.10. lähettäneitä kehotetaan kierrättämään tunnukset.
-2. **Cloudflaren DNS-uudelleenrakennuksen poisto: huippumuisti putosi 79 GiB:stä 12 GiB:iin** ja mediaan-rakennusaika 7,7 sekunnista 3,3:een, kun vyöhykkeitä ei enää rakenneta kokonaan uudelleen.
-3. **Docker ja ActiveState laajentavat luotettua sisältöä pip-, npm- ja Maven-paketteihin:** komponentit rakennetaan lähteestä ja kriittisille CVE:ille luvataan korjaukset viidessä työpäivässä.
-4. **Octopus Feature Flags GA:ntui pilvessä ja self-hosted 2027.0:ssa** sääntöpohjaisella kohdentamisella ja porrastetuilla automaattirollaauksilla.
-5. **OpenTofu-import-kansio kannattaa tehdä import-blockeina** CLI-komennon sijaan, koska ne näkyvät planissa ja applyssa; Spaceliftin tutoriaali kattaa for_each- ja identiteettiargumentit.
+3. **Docker ja ActiveState laajentavat luotettua sisältöä paketteihin:** Kumppanuus ulottaa trusted content -standardin peruskuvista pip-, npm- ja Maven-paketteihin; ActiveState rakentaa komponentit lähdekoodista ja lupaa korjaukset kriittisiin CVE:ihin viidessä työpäivässä.
+
+4. **Octopus Feature Flags GA:ksi:** Ominaisuus poistuu julkisesta esikatselusta Octopus Cloudissa ja saapuu itse isännöityyn Octopus 2027.0:aan sääntöpohjaisella kohdentamisella ja vaiheistetulla automaattisella julkaisulla; vanhat liput vaativat päivitetyt asiakas-SDK:t ennen päivitystä.
+
+5. **Cloudflare puolitti DNS-rakennusten viiveen:** Lopettamalla kokonaisten DNS-vyöhykkeiden uudelleenrakentamisen asetusmuutosten yhteydessä Cloudflare pudotti piikkimuistin 79 GiB:stä 12 GiB:iin ja mediaanin rakennusajan 7,7 sekunnista 3,3 sekuntiin.
