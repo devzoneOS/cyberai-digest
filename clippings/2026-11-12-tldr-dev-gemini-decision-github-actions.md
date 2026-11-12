@@ -1,22 +1,15 @@
-# TLDR Dev 12.11.2026 — Gemini Decision, GitHub Actions -lukitus, Dropbox-agentti
+---
+pvm: 2026-11-12
+kategoria: ai_news
+tunnisteet: [gemini, github-actions, nextjs, evaluaatio, ohjelmistokehitys, suorituskyky]
+lahde: TLDR Dev
+gmail-aihe: "Gemini Decision Model ⚡️, lock your GitHub Actions 🔒, Dropbox side projects 🎨"
+---
 
-- **Päivämäärä:** 2026-11-12
-- **Kategoria:** ai_security
-- **Tunnisteet:** github-actions, toimitusketjuturvallisuus, gemini, ai-api:t, agentit, nextjs, eval
-- **Gmail-aihe:** Gemini Decision Model ⚡️, lock your GitHub Actions 🔒, Dropbox side projects 🎨
+1. **Next.js-muistivuoto 5 GBsta 1,2 GB:iin:** Zepton podit pysyivät ~5 GB:ssa, koska react-query v3 käynnistää jokaiselle palvelimella renderöidylle querylle minuuttien mittaisen ajastimen, ja Node sitoo ajastimen pyynnön AsyncLocalStorage-kontekstiin pitäen valmiit pyynnöt muistissa. Palvelinpuolen queryille riittämätön (ääretön) cache time pysäytti ajastimet ja pudotti muistinkäytön ~1,2 GB:iin — sama ansa pätee v5:llä explicit gcTimella.
 
-## Keskeiset uutiset
+2. **Eval-driven development agenttien parantamiseen:** LangChain ehdottaa testivetoinen silmukkaa AI-agenttien kehitykseen: kirjoita läpäisy/hylkäys-määrittely yhdelle käyttäytymiselle ennen muutosta, aja vertailu esimerkeittäin, pidä holdout-joukko ylisovituksen varalta ja aja evaluaatiot CI:ssä ja tuotantoliikenteessä.
 
-1. **GitHub Actions -työnkulut kannattaa lukita lockfile-tiedostolla.** Lockfile säilyttää luettavat versiotagit mutta tallentaa tarkat commit-pinnit, joita workflow ei voi hiljaisesti ajautua ohi. Lockfile päivitetään Renovatella tai Dependabotilla ja varmistetaan CI:ssä — keskeinen toimitusketjuturvallisuuden parannus.
+3. **Lukitse GitHub Actionsisi:** Actions-lukkotiedostot pitävät luettavat versiotunnisteet mutta tallentavat tarkat commitit, joihin ne ratkeavat. Käytännön opas kattaa lukkotiedoston generoinnin, päivityksen Renovate/Dependabotilla ja varmistuksen CI:ssä, jottei workflow hiljalleen lipsu pineistä.
 
-2. **Googlen Gemini Decision 1 ja Decisions API pisteyttävät valintoja tekstiä generoimatta.** Malli arvioi jopa 1 000 kyllä/ei- tai rubriikkikysymystä yhdellä läpikäynnillä tekstiä, kuvia, ääntä ja PDF:ää vasten, latenssi 150–250 ms ja hinta 0,10 $ / miljoona input-tokenia. Kohdekäyttötapauksia ovat mallireititys, politiikkatarkistukset ja automatisoitu arviointi.
-
-3. **Zepto korjasi Next.js-muistivuodon 5 gigatavusta 1,2:een.** Syynä oli react-query:n palvelinpuolen ajastin, joka sitoi jokaisen SSR-requestin AsyncLocalStorage-kontekstiin pysyvästi. Ratkaisuna palvelinpuolen kyselyihin asetettiin ääretön cache-aika; sama ansa pätee vielä v5-versiossa.
-
-4. **Eval-driven development tuo testivetoisen silmukan AI-agenttien kehitykseen.** LangChain kehittää kirjoittamaan pass/fail-spesifikaation ennen muutosta, rakentamaan datasetin ja evaluaattorin ensin ja vertaamaan kokeita yksitellen — keskiarvon nousu voi piilottaa regressioita. Evaluaattorit kuuluvat myös CI:hin ja tuotantoliikenteeseen.
-
-5. **Dropboxin agentti syntyi kahdesta insinöörin sivuprojektista.** Jokainen keskustelu ajetaan tuoreessa virtuaalikoneessa millisekunneissa, tunnukset ja käyttöoikeudet pidetään agentin ulottumattomissa, ja jokainen tiedostomuutos kytketään keskusteluun — käyttäjä voi perua vain yhden agentin muutokset.
-
-6. **Chromen Modern Web Guidance 1.0 syöttää koodausagenteille web-osaamista.** Skill-pakki antaa agenteille asiantuntijoiden tarkistamaa ohjeistusta ja Baseline-yhteensopivuusdataa (saavutettavuus, suorituskyky, turvallisuus); Firefox ja Edge ovat mukana ylläpitäjinä.
-
-7. **AWS Emulator ajaa AWS API:ita paikallisesti.** Koodausagentit saavat paikallisen AWS-kopion testattavaksi ilman tiliä tai kuluja — avoin lähdekoodi.
+4. **Gemini Decision 1:** Uusi malli arvioi rajattuja valintoja teksti-generoinnin sijaan ja käy läpi jopa 1 000 kysymystä kerralla tekstin, kuvien, äänen, videon ja PDF-aineiston pohjalta. Latenssi on 150–250 ms ja hinta $0,10 per miljoona syöte-tokenia ilman lähtötokenimaksuja; kohde käyttötapauksia ovat mallireititys, politiikkatarkistukset ja rubriikkiarviointi.
