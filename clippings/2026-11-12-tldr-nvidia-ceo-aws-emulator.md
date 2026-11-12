@@ -2,7 +2,7 @@
 
 - **Päivämäärä:** 2026-11-12
 - **Kategoria:** ai_news
-- **Tunnisteet:** nvidia, johto, aws, koodausagentit, gemini, tee​​lläisyys, agentit, openai
+- **Tunnisteet:** nvidia, johto, aws, koodausagentit, gemini, teollisuus, agentit, openai
 - **Gmail-aihe:** Nvidia's CEO search 🔍, AWS emulator 👨‍💻, Gemini Decisions API 💡
 
 ## Keskeiset uutiset
@@ -17,4 +17,4 @@
 
 5. **Subagenttien delegointi epäonnistuu eri tavoin riippuen mallista.** Artikkeli vertaa delegointitapoja ja suosittelee haarautumista (fork) yhteenvetojen sijaan: forkki pitää tarvittavat keskustelun osat ja pudottaa loput, mikä pitää kustannukset kurissa kasvavassa kontekstissa.
 
-6. **Ylijärjestelmien aikakausi edellyttää parempia vallihautoja.** Analyyseissä sekä TLDR-pääkirjeessä että sen dev-sisareskirjeessä todetaan, että AI samanaikaisesti nopeuttaa jäljittelyä ja edun kertymistä — teknologian levityksestä hyötyvät silti vain yritykset, joilla on kestävä kilpailuetu tai matala sisääntulohinta.
+6. **Ylijärjestelmien aikakausi edellyttää parempia vallihautoja.** Analyyseissä todetaan, että AI samanaikaisesti nopeuttaa jäljittelyä ja edun kertymistä — teknologian levityksestä hyötyvät silti vain yritykset, joilla on kestävä kilpailuetu tai matala sisääntulohinta.
