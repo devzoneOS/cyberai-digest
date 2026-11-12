@@ -1,14 +1,17 @@
-# 2026-11-11 — TLDR IT
+---
+pvm: 2026-11-11
+kategoria: ai_security
+tunnisteet: [openai, aws, cisco, mythos, red-teaming, datacenter]
+lahde: TLDR IT
+gmail-aihe: "ChatGPT Hits AWS Marketplace 🛍️, Gmail's AI Upgrade 🚀, Cloud Panic Overblown? 🚨"
+---
 
-- **Kategoria:** ai_news
-- **Tunnisteet:** cloud-marketplace, licensing, supply-chain, procurement
-- **Lähde:** TLDR IT (dan@tldrnewsletter.com), 2026-11-11
-- **Gmail-aihe:** "ChatGPT Hits AWS Marketplace 🛍️, Gmail's AI Upgrade 🚀, Cloud Panic Overblown? 🚨"
+1. **ChatGPT Enterprise AWS Marketplacessa:** OpenAI teki ChatGPT Enterprisen ostettavaksi ja hallinnoitavaksi AWS-tilin ja laskutuksen kautta, ja kulutus voi laskea AWS-sitoumusten piiriin. Valituilla asiakkailla on käytettävissä ChatGPT for Healthcare ja for Financial Services -erikoisversiot.
 
-## Keskeiset uutiset
+2. **Cisco ottaa Claude Mythoksen red-teamingiin:** Cisco integroi Anthropicin Mytos-mallin AI Defense -alustaansa mukautuvaa punaista tiimiä varten. Tavoitteena on tunnistaa tietoturva-aukkoja ja käyttäytymisriskejä agentti-AI-sovelluksissa valvotussa, valtuutetussa testauksessa.
 
-1. **ChatGPT Enterprise on nyt ostettavissa AWS Marketplacelta olemassa olevien AWS-tili- ja laskutussuhteiden kautta.** Kulut voidaan laskea AWS-sitoumusten piiriin, ja erikoisversiot (Healthcare, Financial Services) ovat saatavilla.
-2. **Microsoft lobbaa Yhdysvaltain pyrkimystä kieltää kiinalaiset optiset transceiverit kumoamaan.** Alan ryhmät varoittavat, etteivät vaihtoehtoiset valmistajat pysty korvaamaan kiinalaisia, mikä viivästyttäisi datakeskuksia ja jättäisi AI-piirit käyttämättömiksi.
-3. **"Cloud-kapasiteettipaniikki on liioiteltua":** myyntiloppumisväitteet 2027 asti koskevat pääasiassa suurta koulutusta; tavallinen päättely ja finetuning ovat edelleen mahdollisia. Yritysten kannattaa erottaa kuormatyypit ja varmistaa kapasiteetti suoraan.
-4. **SAP-, VMware- ja Java-lisenssien kiristykset ajavat IT-johtoa vaihtoehtoihin** — mutta integraatiot, koulutus ja rinnakkaisajo voivat syödä säästöt, joten realistinen exit-hinta kannattaa laskea ennen neuvotteluja.
-5. **Cisco integroi Claude Mythos -mallin AI Defense -alustaansa punaisen tiimauksen tehostamiseksi** ja Google laajentaa Gemini-ominaisuuksia Gmailiin kaikille Workspace-käyttäjille.
+3. **Microsoft lobboi kiinalaista optiikkaa koskevaa kieltoa vastaan:** Microsoft ja teollisuusryhmät varoittavat, etteivät vaihtoehtoiset toimittajat pysty korvaamaan kiinalaisia optisia transceiverejä, mikä viivästyttäisi datacenter-rakentamista ja jättäisi AI-siruja käyttämättömiksi.
+
+4. **Pilvikapasiteettipaniikki liioiteltua:** Väitteet AWS:n ym. pilvitarjoajien loppuunmyydystä AI-kapasiteetista 2027 asti liioittelevat pulaa. Suuret koulutustyökuormat ovat rajoitteissa, mutta normaalit päättely- ja hienosäätökuormat ovat toteutettavissa — yritysten kannattaa erottaa työkuormatyypit ja varmistaa kapasiteetti suoraan tarjoajalta.
+
+5. **Googlen laajennus Gmailiin:** Gemini-sähköpostisäikeiden yhteenvedot ja "Help me write" laajenevat kaikille täysi-ikäisille Workspace-käyttäjille, joilla smart-ominaisuudet ovat päällä. Ominaisuudet ovat oletuksena päällä, mutta käyttäjä- ja ylläpitäjäasetuksilla voi ottaa ne pois.
