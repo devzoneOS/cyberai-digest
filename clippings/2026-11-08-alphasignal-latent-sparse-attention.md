@@ -1,12 +1,13 @@
-# 2026-11-08 — AlphaSignal
+---
+pvm: 2026-11-08
+kategoria: ai_news
+tunnisteet: [lsa, attention, pitka-konteksti, inference, agentit]
+lahde: AlphaSignal
+gmail-aihe: "⚡ Latent Sparse Attention Speeds Up 10M-Token AI Contexts by 9x"
+---
 
-- **Kategoria:** ai_news
-- **Tunnisteet:** long-context, attention, inference-efficiency
-- **Lähde:** AlphaSignal (news@alphasignal.ai), 2026-11-08
-- **Gmail-aihe:** "⚡ Latent Sparse Attention Speeds Up 10M-Token AI Contexts by 9x"
+1. **Latent Sparse Attention (LSA) nopeuttaa pitkiä konteksteja:** Prefrontal AI:n ja ETH Zürichin kehittämä tekniikka ryhmittelee attention-arvot klustereihin ja ryhmiin, mikä helpottaa niiden läpikäyntiä uusien querytjen kartoituksessa. 10 miljoonan tokenin tehtävissä LSA lyhensi time-to-first-tokenia yli 9x full attention -malliin ja 2,2x suosittuun sparse attention -menetelmään verrattuna.
 
-## Keskeiset uutiset
+2. **Miksi sparse attentionkin kallistuu:** Full attentionissa jokainen uusi query tarkastelee kaikkia aiempia avaimia, ja kontekstin kaksinkertaistaminen nelinkertaistaa laskennan — erityisesti prefill-vaiheessa, jossa koko syöte käsitellään. Myös decode-vaiheessa koko konteksti konsultoidaan jokaisella tokenilla.
 
-1. **Latent Sparse Attention (LSA) järjestää attention-avaimet klustereiksi ja ryhmiksi kuin kirjaston.** 10 miljoonan tokenin tehtävissä first token -aika pieneni yli 9x verrattuna full attentioniin ja 2,2x verrattuna suosittuun sparse attention -menetelmään.
-2. **Sparse attentionkin kallistuu kasvaessa:** full attentionin laskenta nelinkertaistuu kontekstin kaksinkertaistuessa, ja prefill- sekä decode-vaiheet molemmat hidastuvat pitkissä konteksteissa.
-3. **LSA poistaa pullonkaulan, joka rajoitti aiempien sparse-menetelmien tarkasteltavissa olevien tokenien määrää**, tehden miljoonatokenin kontekstit käytännöllisiksi pitkäkestoisille agentteille.
+3. **Käytännön hyöty kehittäjille:** Pitkiä agenttityöskentelyä (koodikannat, dokumenttikirjastot, pitkät interaktiohistoriat) rakentaville sovelluksille LSA tarjoaa tavan leikata inference-latenssia ja kustannuksia merkittävästi.
