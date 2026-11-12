@@ -1,13 +1,17 @@
-# 2026-11-09 — TLDR IT
+---
+pvm: 2026-11-09
+kategoria: ai_security
+tunnisteet: [microsoft, copilot, openai, gpt-6-cyber, kyberturvallisuus, puolustus]
+lahde: TLDR IT
+gmail-aihe: "Microsoft’s Secret Copilot Limits 🤫, OpenAI’s $1.25 Trillion Bet 💰, Wi-Fi 8’s Big Surprise 📶"
+---
 
-- **Kategoria:** ai_security
-- **Tunnisteet:** ai-governance, cybersecurity-models, machine-speed-defense
-- **Lähde:** TLDR IT (dan@tldrnewsletter.com), 2026-11-09
-- **Gmail-aihe:** "Microsoft's Secret Copilot Limits 🤫, OpenAI's $1.25 Trillion Bet 💰, Wi-Fi 8's Big Surprise 📶"
+1. **Microsoftin paljastamattomat Copilot-rajat:** Microsoft laajentaa Copilot Chat -käyttörajoituksia M365-asiakkaille ilman erillistä Copilot-lisenssiä — rajoja ei ole julkistettu eikä IT-ylläpitäjät voi nähdä tai muuttaa niitä. Rollout alkoi 2.11. alle 2 000 paikan organisaatioissa ja laajenee 9.11. suurempiin.
 
-## Keskeiset uutiset
+2. **GPT-6 Cyber julkaistu:** OpenAI esitteli kyberturvallisuuteen erikoistetun mallin valtuutettuihin tehtäviin kuten haavoittuvuuksien löytämiseen ja korjausten validointiin. Erikoistunut jälkikoulutus ja turva-aidat varmistavat toiminnan valtuutetuissa rajoissa; malli on Daybreak Red -ohjelman hyväksyttyjen asiakkaiden käytössä.
 
-1. **Microsoft laajentaa paljastamattomia Copilot Chat -käyttörajoja Microsoft 365 -asiakkailla ilman Copilot-lisenssiä.** Ylläpitäjät eivät näe tai voi muuttaa rajoja; laajennus ulottuu yli 2 000 paikan organisaatioihin 9.11. alkaen.
-2. **OpenAI keräsi 11 miljardia dollaria kohti 20 miljardin kierrosta arvostuksella 1,25 biljoonaa.** Kierros heijastaa kasvavaa investorien tarkkuutta tekoälyinvestointeja kohtaan.
-3. **GPT-6 Cyber on OpenAI:n kyberturvallisuusmalli valtuutettuihin tehtäviin** kuten haavoittuvuuksien löytämiseen ja korjausten validointiin; pääsy on rajattu Daybreak Red -ohjelman hyväksyttyihin asiakkaisiin.
-4. **"Defense in depth, rebuilt for machine speed":** koska tekoäly tekee hyväksikäytöstä halpaa ja nopeaa, alan pitää siirtyä altistusten poistamiseen, segmentointiin, virtuaalikorjauksiin, muistiturvalliseen koodiin ja varmoihin varmuuskopioihin.
+3. **Puolustus syvyydessä konenopeudelle:** AI tekee hyväksikäytöstä merkittävästi halvempaa ja nopeampaa, joten hitaan ihmiskorjauksen varassa oleminen ei riitä. Suositukset: poista altistus avoimesta internetistä, verkon segmentointi, virtuaalipatchaus, muistiturvallinen koodi ja varmistetut varmuuskopiot.
+
+4. **OpenAI:n rahoituskierros:** 11 miljardia dollaria kohti mahdollista 20 miljardin kierrosta 1,25 biljoonan arvostuksella — aiempaa pienempi, mikä kuvastaa kasvavaa sijoittajien tarkkuutta AI-infrastruktuurikuluihin.
+
+5. **AI-kulutuksen kasvu tasoittunut:** Rampin transaktiodatan mukaan AI-tokenien kulutus kasvoi vain 1,5 % elo–syyskuussa, vaikka käyttö kasvoi — halventuvat hinnat ja enterprise-alennukset mahdollistavat enemmän kulutusta ilman budjetin kasvua.
