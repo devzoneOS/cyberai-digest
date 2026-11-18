@@ -1,37 +1,37 @@
-# Lähdetilastot (päivitetty 2026-11-12)
+# Lähdetilastot (päivitetty 2026-11-18)
 
 | Lähde | päiviä | uutisia | rikki | viimeksi tuotti |
 |---|---|---|---|---|
-| The Hacker News | 37 | 111 | 0 | 2026-11-12 |
-| BleepingComputer | 37 | 111 | 0 | 2026-11-12 |
-| Dark Reading | 37 | 111 | 0 | 2026-11-05 |
-| Hugging Face Blog | 37 | 111 | 0 | 2026-11-01 |
-| Google DeepMind Blog | 37 | 111 | 0 | - |
-| TechCrunch AI | 37 | 111 | 0 | - |
-| Open AI uutiset | 32 | 96 | 0 | - |
-| Open AI Blogi | 32 | 96 | 0 | - |
-| Mistral AI | 32 | 96 | 0 | - |
-| Tivi | 32 | 96 | 0 | - |
-| Iltalehti Bitti | 32 | 96 | 0 | - |
-| Uusiteknologia | 32 | 79 | 0 | - |
+| The Hacker News | 38 | 114 | 0 | 2026-11-18 |
+| BleepingComputer | 38 | 114 | 0 | 2026-11-18 |
+| Dark Reading | 38 | 114 | 0 | 2026-11-05 |
+| Hugging Face Blog | 38 | 114 | 0 | 2026-11-01 |
+| Google DeepMind Blog | 38 | 114 | 0 | - |
+| TechCrunch AI | 38 | 114 | 0 | - |
+| Open AI uutiset | 33 | 99 | 0 | - |
+| Open AI Blogi | 33 | 99 | 0 | - |
+| Mistral AI | 33 | 99 | 0 | - |
+| Tivi | 33 | 99 | 0 | - |
+| Iltalehti Bitti | 33 | 99 | 0 | - |
+| Uusiteknologia | 33 | 82 | 0 | - |
 | Kyberturvallisuuskeskus | 28 | 78 | 2 | 2026-11-05 |
-| SANS ISC | 37 | 68 | 0 | 2026-11-02 |
-| Schneier on Security | 37 | 52 | 0 | 2026-11-02 |
-| MIT Technology Review AI | 31 | 42 | 0 | - |
-| Krebs on Security | 37 | 38 | 0 | 2026-11-05 |
-| Microsoft Azure | 32 | 36 | 0 | - |
-| Kyberturvallisuuskeskus Tietoturva NYT | 7 | 21 | 0 | 2026-11-12 |
-| Kyberturvallisuuskeskus Päivittäinen Uutiskooste | 7 | 21 | 0 | 2026-11-12 |
-| Kyberturvallisuuskeskus Haavoittuvuudet | 7 | 21 | 0 | 2026-11-12 |
-| Kyberturvallisuuskeskus Varoitukset | 7 | 15 | 0 | 2026-11-10 |
-| arXiv cs.AI (tekoäly) | 10 | 12 | 0 | - |
-| arXiv cs.CR (tietoturva) | 10 | 9 | 0 | - |
+| SANS ISC | 38 | 71 | 0 | 2026-11-02 |
+| Schneier on Security | 38 | 55 | 0 | 2026-11-02 |
+| MIT Technology Review AI | 32 | 45 | 0 | - |
+| Krebs on Security | 38 | 39 | 0 | 2026-11-05 |
+| Microsoft Azure | 33 | 36 | 0 | - |
+| Kyberturvallisuuskeskus Tietoturva NYT | 8 | 24 | 0 | 2026-11-18 |
+| Kyberturvallisuuskeskus Päivittäinen Uutiskooste | 8 | 24 | 0 | 2026-11-18 |
+| Kyberturvallisuuskeskus Haavoittuvuudet | 8 | 24 | 0 | 2026-11-18 |
+| Kyberturvallisuuskeskus Varoitukset | 8 | 15 | 0 | 2026-11-10 |
+| arXiv cs.AI (tekoäly) | 11 | 15 | 0 | - |
+| arXiv cs.CR (tietoturva) | 11 | 12 | 0 | - |
 | Kyberturvallisuuskeskus päivittäiset uutiset | 2 | 6 | 0 | 2026-10-11 |
 | Kyberturvallisuuskeskus varoitukset | 2 | 6 | 0 | 2026-10-11 |
 | Kyberturvallisuuskeskus päivittäiset haavoittuvuuskooste | 2 | 4 | 0 | 2026-10-11 |
-| VentureBeat AI | 37 | 0 | 37 | - |
-| Tietoturva.fi | 15 | 0 | 15 | - |
-| Open AI uutuudet | 32 | 0 | 32 | - |
-| Microsoft AI | 32 | 0 | 32 | - |
-| Mistral Uutiset | 32 | 0 | 32 | - |
-| IACR ePrint (kryptotutkimus) | 10 | 0 | 10 | - |
+| VentureBeat AI | 38 | 0 | 38 | - |
+| Tietoturva.fi | 16 | 0 | 16 | - |
+| Open AI uutuudet | 33 | 0 | 33 | - |
+| Microsoft AI | 33 | 0 | 33 | - |
+| Mistral Uutiset | 33 | 0 | 33 | - |
+| IACR ePrint (kryptotutkimus) | 11 | 0 | 11 | - |
